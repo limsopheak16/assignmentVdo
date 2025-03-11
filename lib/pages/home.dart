@@ -65,32 +65,70 @@ class _HomepageState extends State<Homepage> {
           ],
         ),
         SizedBox(height: 20,),
-        ListView.separated(
-          itemCount: popularDiets.length,
-          shrinkWrap: true,
-          separatorBuilder: (context, index) => SizedBox(height: 20,),
-          padding: EdgeInsets.only(left: 20, right: 20),
+        // ListView.separated(
+        //   itemCount: popularDiets.length,
+        //   shrinkWrap: true,
+        //   separatorBuilder: (context, index) => SizedBox(height: 20,),
+        //   padding: EdgeInsets.only(left: 20, right: 20),
 
-          itemBuilder: (context, index){
-            return Container(
-              color: Colors.blue,
-              height: 115,
-              // decoration: BoxDecoration(
-              //   color: Colors.white,
-              //   borderRadius: BorderRadius.circular(20),
-              //   // boxShadow: [
-              //   //   BoxShadow(
-              //   //     color: Color(0xff1D1617).withOpacity(0.07),
-              //   //     offset: Offset(0, 10),
-              //   //     spreadRadius: 0,
-              //   //     blurRadius: 40,
-              //   //     // offset: Offset(0, 10), // changes position of shadow
-              //   //   )
-              //   // ]
-              // ),
-            );
-          },
-        )
+        //   itemBuilder: (context, index){
+        //     return Container(
+        //       color: Colors.blue,
+        //       height: 115,
+        //       child: Row(
+        //         mainAxisAlignment: MainAxisAlignment.center,
+        //         crossAxisAlignment: CrossAxisAlignment.start,
+        //         children: [
+        //           SvgPicture.asset(popularDiets[index].iconPath,
+        //            width: 50,
+        //           height: 50,
+        //           ),
+                 
+        //           // Column(
+        //           //   children: [
+        //           //     Text(
+        //           //       popularDiets[index].name,
+        //           //       style: TextStyle(
+        //           //         color: Colors.black,
+        //           //         fontSize: 16,
+        //           //         fontWeight: FontWeight.w600,
+        //           //       ),
+        //           //     ),
+        //           //      Text(
+        //           //       diets[index].level + ' . ' + diets[index].duration + ' . ' + diets[index].calorie,
+        //           //       style: TextStyle(
+        //           //         color: Color(0xffB1B1B1),
+        //           //         fontSize: 12,
+        //           //         fontWeight: FontWeight.w400,
+        //           //       ),
+        //           //     ),
+        //           //   ],
+        //           // ),
+        //           // GestureDetector(
+        //           //   onTap: (){},
+        //           //   child: SvgPicture.asset('assets/icons/button.svg',
+                
+        //           // )
+        //           // )
+        //         ],
+        //       // ),
+        //       // decoration: BoxDecoration(
+        //       //   color: Colors.white,
+        //       //   borderRadius: BorderRadius.circular(20),
+        //       //   boxShadow: [
+        //       //     BoxShadow(
+        //       //       color: Color(0xff1D1617).withOpacity(0.7),
+        //       //       offset: Offset(0, 10),
+        //       //       spreadRadius: 0.0,
+        //       //       blurRadius: 40,
+        //       //       // offset: Offset(0, 10), // changes position of shadow
+        //       //     )
+        //       //   ] 
+        //       // ),
+             
+        //     // );
+        //   },
+        // )
         ],
       ),
     );
